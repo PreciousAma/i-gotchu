@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './App.css';
+import Input from './components/Input';
+import Button from './components/Button';
+
+// import '../images/anshu-a-wi9Oi8Og7sc-unsplash.jpg';
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("submitted");
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Input />
+      <Button buttonText="Submit" buttonAction={handleSubmit} />
+    </>
   );
 }
 
